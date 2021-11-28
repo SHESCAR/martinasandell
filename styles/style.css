@@ -214,3 +214,9 @@
     from, to { border-color: transparent}
     50% {border-color: rgb(86, 164, 228)}
 }
+
+.imageFlexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
