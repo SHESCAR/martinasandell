@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+.navbarContainer {
+    /* Background color */
+    background-color: #000000;
+
+    /* Text color */
+    color: #ffffff;
+}
+
+.navbar {
+    /* first rule to use flexbox (always use this!!!!!!!!!!!!!) */
+    display: flex;
+
+    /* Flex direction -- which way the elements must stay on the page */
+    flex-direction: column;
+
+    /* Justify content -- places items vertically on page */
+    justify-content: center;
+
+    /* Align items -- places items horizontally on page */
+    align-items: center;
+} 
+
+#stort {
+    /* Font size -- change size of text */
+    font-size: 50px;
+
+    margin-bottom: 0px;
+}
+
+#litet{
+    font-size: 30px;
+    margin-bottom:20px;
+}
+
+
+
+.heroContainer {
+    /* vh === view height --> Längden av apparaten som hemsidan syns på */
+    height: 100vh;
+
+    
+    /* Här lägger vi in en bild via css istället */
+    background-image: url("../images/hero.jpg");
+
+    /* Ser till att bilden inte repeteras */
+    background-repeat: no-repeat;
+
+    /* Gör bilden större */
+    background-size: contain;
+
+    /* Positionera bilden */
+    background-position: right center;
+
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #323232;
+
+}
+.herotext {
+    border: 5px solid #e9e6e6;
+    background-color: #ffffff;
+
+    /* Bredden ===  Width */
+    width: 50%;
+
+    /* Text alignment */
+    text-align: center;
+}
+
+#intro {
+    /* Text transform */
+    text-transform: uppercase;
+
+    /* Letter spacing */
+    letter-spacing: 10px;
+    
+    /* Color for text */
+    color: rgb(10, 74, 104);
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+#title {
+    /* Text transform */
+    text-transform: uppercase;
+
+    /* Font */
+    font-family: 'Nixie One', sans-serif;
+}
+
+#title::before {
+    content: "Dancer";
+
+    /* Namn på animationen, det ska vara samma som keyframes */
+  animation-name: changeText;
+
+    /* Hur länge animationen ska ta (i sekunder) */
+    animation-duration: 4s;
+
+    /* Vilket håll ska animationen gå (framlänges, baklänges, eller både fram + baklänges) */
+    animation-direction: alternate;
+
+    /* Hur mycket ska det väntas innan animationen kör igång */
+    animation-delay: 1s;
+
+    /* Snabbhet animationen  */
+    animation-timing-function: linear;
+
+    /* Hur ofta ska animationen köras på... antingen 1 gång eller flera */
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes ---> Ett sätt att göra animation med CSS. Här definerar vi vad ska hända med texten på sidan. */
+@keyframes changeText {
+    /* startpunkt */
+    /* allt i mellan */
+
+    20% {
+        content: "Programmerare";
+    }
+
+    40% {
+        content: "Halv heart human";
+    }
+
+    60% {
+        content: "Music Lover";
+    }
+ 
+    80% {
+        content: "Dancer";
+    }
+
+    /* slutpunkt */
+    100% {
+        content: "Gamer"
+    } 
+}
+
+.aboutContainer {
+    /* Flexbox */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Martina {
+    /* border: 2px solid orange; */
+    text-align: center;
+    padding: 0 0.8px;
+    margin: 15px 0;
+    font-family: 'Nixie One', sans-serif;
+}
+
+.Martina > h2 {
+    /* hide text until animation show it -- overflow:hidden */
+    overflow: hidden;
+
+    /* type writer effect */
+    border-right: 1px solid rgb(86, 164, 228);
+
+    /* Keep in the same line */
+    white-space: nowrap;
+
+    /* Scrolling effect when typing  */
+    margin: 0 auto;
+
+    /* Anropa animations */
+    animation: typing 2.5s steps(30, end), blinking .5s step-end infinite;
+}
+
+
+
+.text {
+    width:100%;
+    text-align:center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+    color: rgb(15, 127, 179);
+    /* flexbox */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.age, .schoolYear, .hobbies {
+    width:30%;
+}
+
+.hobbies > ul {
+    list-style-type: none;
+}
+
+
+/* Keyframes for typing */
+@keyframes typing {
+    /* startpunkt */
+    from {width: 0%}
+
+    /* slutpunkt */
+    to { width: 100%}
+}
+
+/* Keyframes for type writer effect */
+@keyframes blinking {
+    from, to { border-color: transparent}
+    50% {border-color: rgb(86, 164, 228)}
+}
