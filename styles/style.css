@@ -43,7 +43,7 @@
 
     
     /* Här lägger vi in en bild via css istället */
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/HR.JPG");
 
     /* Ser till att bilden inte repeteras */
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
     background-size: contain;
 
     /* Positionera bilden */
-    background-position: right center;
+    background-position: center center;
 
     /*Flexbox*/
     display: flex;
@@ -231,6 +231,7 @@
 .row {
     display:table-row;
   }
+
   .pixel {
     display: table-cell;
     background-color: #fff;
@@ -243,3 +244,25 @@
     height:50px;
     border: 2px solid #000000; 
   }
+
+
+.thankYou {
+    margin-top: 30px;
+    height: 100vh;
+    background-image: url("../images/bild-hr.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thankYouText {
+    background-color: #fff;
+    color: #000;
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+}
