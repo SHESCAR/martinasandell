@@ -145,7 +145,32 @@
         content: "Gamer"
     } 
 }
+@-webkit-keyframes changeText {
+    /* startpunkt */
+    /* allt i mellan */
 
+    20% {
+        content: "Programmer";
+    }
+
+    40% {
+        content: "Halv heart human";
+    }
+
+    60% {
+        content: "I enjoy music";
+    }
+ 
+    80% {
+        content: "Dancer";
+    }
+
+    /* slutpunkt */
+    100% {
+        content: "Gamer"
+    } 
+}
+fwf-kdtg-ner
 .aboutContainer {
     /* Flexbox */
     display:flex;
