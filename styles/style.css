@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 .navbarContainer {
     /* Background color */
     background-color: #000000;
@@ -24,6 +26,7 @@
 } 
 
 #stort {
+    font-family: 'Caveat', cursive;
     /* Font size -- change size of text */
     font-size: 50px;
 
@@ -31,7 +34,8 @@
 }
 
 #litet{
-    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
     margin-bottom:20px;
 }
 
@@ -264,5 +268,5 @@
     background-color: #fff;
     color: #000;
     font-size: 30px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(67, 126, 204);
 }
