@@ -117,6 +117,7 @@
 
     /* Hur ofta ska animationen köras på... antingen 1 gång eller flera */
     animation-iteration-count: infinite;
+    -webkit-animation: iphone 4s alternate 1s linear infinite;
 }
 
 /* @keyframes ---> Ett sätt att göra animation med CSS. Här definerar vi vad ska hända med texten på sidan. */
@@ -145,7 +146,7 @@
         content: "Gamer"
     } 
 }
-@-webkit-keyframes changeText {
+@-webkit-keyframes iphone {
     /* startpunkt */
     /* allt i mellan */
 
@@ -170,7 +171,7 @@
         content: "Gamer"
     } 
 }
-fwf-kdtg-ner
+
 .aboutContainer {
     /* Flexbox */
     display:flex;
